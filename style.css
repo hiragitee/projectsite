@@ -131,3 +131,12 @@ footer{
 form textarea{
   resize: none;
 }
+.image-container { 
+    width:300px;
+    height:150px;
+    text-align:center;
+}
+
+.image-container img {
+    height:100%;
+}
