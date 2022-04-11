@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    </head>
+    <header>
+        <hr>
+        <div class="image-container">
+          <img src="img/PC_hub-logos_black.png" alt="logo" width="70%" id="imglogo">
+          </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <div class="dropdown">
+              <button class="dropbtn">Categories
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="PCparts.html">PC Parts</a>
+                <a href="PCbuilds.html">Full Builds</a>
+                <a href="#">Accessories</a>
+              </div>
+              
+            </div> 
+            <a href="order.html">Order</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="Aboutus.html">About Us</a>
+            <a href="questionnaire.html">Questionnaire</a>
+            <a href="funpage.html">Funpage</a>
+          </div>
+          
+    </header>
+    <body>
+      <script src="scripts.js"></script>
+      <form name="questionnaire" method="POST" data-netlify="true">
+        <label for="Gender">Gender:</label><br>
+        <input type="radio" id="male" name="male" value="male">Male<br>
+        <input type="radio" id="female" name="female" value="female">Female<br><br>
+        <label for="satisfaction" id="happy" name="happy">How satisfied are you with our service!</label>
+        <br><input type="radio" id="1" name="1" value="1"> 1
+        <input type="radio" id="2" name="2" value="2">2
+        <input type="radio" id="3" name="3" value="3">3
+        <input type="radio" id="4" name="4" value="4">4
+        <input type="radio" id="5" name="5" value="5">5
+        <br><br>
+        <label for="look" id="look" name="look">What do you think of our website's look</label>
+        <br><input type="radio" id="1.0" name="1" value="1"> 1
+        <input type="radio" id="2.0" name="2" value="2">2
+        <input type="radio" id="3.0" name="3" value="3">3
+        <input type="radio" id="4.0" name="4" value="4">4
+        <input type="radio" id="5.0" name="5" value="5">5
+        <br><br>
+        <label for="purpose">What do you use your pc for:</label>
+        <br>
+        <input type="checkbox" id="Study" name="Study">Study
+        <input type="checkbox" id="Work" name="Work">Work
+        <input type="checkbox" id="Entertainment" name="Entertainment">Entertainment
+        <br>
+        <input type="checkbox" id="business" name="business">business
+        <input type="checkbox" id="streaming" name="Streaming">Streaming
+        <input type="checkbox" id="Gaming" name="Gaming">Gaming
+        <br>
+        <br>
+        <label for="others">Any other questions?</label>
+        <br>
+        <input type="textbox" id="others" name="others" style="height: 100px; width:300px">
+        <br><br>
+        <input type="submit" value="Submit">
+        
+      </form> 
+      
+        
+    </body>
+    <footer>
+        <p style="text-align: center;">Copyright © - PC-HUB</p>
+    </footer>
+</html>

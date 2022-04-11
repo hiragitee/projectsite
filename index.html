@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    </head>
+    <header>
+        <hr>
+
+        
+         <div class="image-container">
+        <img src="img/PC_hub-logos_black.png" alt="logo" width="70%" id="imglogo">
+        </div>
+      
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <div class="dropdown">
+              <button class="dropbtn">Categories
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="PCparts.html">PC Parts</a>
+                <a href="PCbuilds.html">Full Builds</a>
+                <a href="#">Accessories</a>
+              </div>
+              
+            </div> 
+            <a href="order.html">Order</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="Aboutus.html">About Us</a>
+            <a href="questionnaire.html">Questionnaire</a>
+            <a href="funpage.html">Funpage</a>
+          </div>
+          
+    </header>
+    <body>
+        
+          <p>THIS is PC-HUB</p>
+          <P>we provide PCs for those who need parts or complete builds</P>
+          <p>customer satisfaction is our #1 priority</p>
+          <img src="img/satisfaction.jpg" class="center">
+          <p>navigate through the hyperlinks to browse the website.</p>
+          <div class="panimate"style="width: 50px">
+            <p>Welcome to PC-HUB <br>
+            <script>
+              var today = new Date(); 
+              var dd = String(today.getDate()).padStart(2, '0');  
+              var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+              var yyyy = today.getFullYear();
+              var current_time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+              today = mm + '/' + dd + '/' + yyyy;
+
+              document.write(today);  
+              document.write("<br>"+current_time);
+            </script></p>
+            </div>
+            <div class="slideshow-container">
+              
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/pc build2.png" style="width:50%">
+                <div class="text"></div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/pcbuild1.png" style="width:50%">
+                <div class="text"></div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/pc build4.png" style="width:50%">
+                <div class="text"></div>
+              
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+              <script>
+                let slideIndex = 0;
+              showSlides();
+
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+              }
+                </script>
+    </body>
+    <footer>
+        <p style="text-align: center;">Copyright © - PC-HUB</p>
+    </footer>
+</html>
